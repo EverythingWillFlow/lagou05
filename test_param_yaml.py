@@ -1,14 +1,17 @@
 import pytest
-import yaml
+import yaml,sys,os
+sys.path.append("./..")
 def get_datas():
     # 打开文件
-    with open("./data.yml") as f:
+    with open("F:\pycharm\lagou05\data.yml") as f:
         datas = yaml.safe_load(f)
-        print(datas)
+        #print(datas)
         # 获取文件中key为datas的数据
         add_datas = datas["datas"]
         # 获取文件中key为myids的数据
         add_ids = datas["myids"]
+        print("=============")
+        print(add_datas,add_ids)
         return [add_datas,add_ids]
 
 def add_function(a,b):
