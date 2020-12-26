@@ -1,0 +1,26 @@
+datas:
+  - [9,3,3]
+  - [-2,1,-2]
+  - [-5,-2,2.5]
+  - [80000,10,8000]
+  - [0.3,0.5,0.6]
+  - [0.4,0.5,0.8]
+  - [.2,.5,0.4]
+  - [0.000000001,0.00002,0.00005]
+  - [1/2,1/3,"Inappropriate argument type."]
+  - [0,0,"Second argument to a division or modulo operation was zero."]
+  - ["str1","r1","Inappropriate argument type."]
+
+
+myids:
+  - "int"
+  - "div1"
+  - "minus"
+  - "bigint"
+  - "float1"
+  - "float2"
+  - "float3"
+  - "float4"
+  - "fract"
+  - "zero"
+  - "str"
