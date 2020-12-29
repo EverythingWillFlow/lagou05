@@ -1,0 +1,37 @@
+datas:
+  - [3,3,6]
+  - [-1,-2,-3]
+  - [1000,1000,2000]
+
+myids:
+  - "int"
+  - "minus"
+  - "bigint"
+
+subdatas:
+  - [6,3,3]
+  - [3000,1000,2000]
+
+submyids:
+  - "int"
+  - "bigint"
+
+muldatas:
+  - [ 3,3,9 ]
+  - [ -1,-2,2 ]
+  - [ 100,100,10000 ]
+
+mulmyids:
+  - "int"
+  - "minus"
+  - "bigint"
+
+divdatas:
+  - [6,3,2]
+  - [-3,3,-1]
+  - [600,30,20]
+
+divmyids:
+  - "int"
+  - "minus"
+  - "bigint"

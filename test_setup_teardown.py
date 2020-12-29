@@ -19,11 +19,11 @@ def setup_function():
 def teardown_function():
     print("\nteardown_function:不在类中的用例执行后")
 
-def test_three():
-    print("正在执行test three")
-
-def test_four():
-    print("正在执行test four")
+# def test_three():
+#     print("正在执行test three")
+#
+# def test_four():
+#     print("正在执行test four")
 
 class TestClass():
 
