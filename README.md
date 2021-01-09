@@ -7,7 +7,7 @@ which provides the `--lf` and `--ff` options, as well as the `cache` fixture.
 
 See [the docs](https://docs.pytest.org/en/stable/cache.html) for more information.
 
-##[第二次作业]()
+##[第二次作业](https://github.com/testroute/lagou05/blob/master/Testcases/test_calculator_lesson2.py)
 - 补全计算器（加减乘除）的测试用例，编写用例顺序：加-除-减-乘
 - 创建 fixture 方法实现执行测试用例前打印【开始计算】，执行测试用例之后打印【计算结束】
 - 将 fixture 方法存放在 conftest.py ，设置 scope=module
