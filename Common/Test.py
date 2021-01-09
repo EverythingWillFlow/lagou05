@@ -1,10 +1,7 @@
-import os
-root_path = os.path.abspath(os.path.dirname(__file__)).split('lagou05')[0]
-print(os.path.abspath(os.path.dirname(__file__)))
-add1=1/2+1/3
-print(add1)
+import pytest
 
-try:
-     "ss"/"s"
-except Exception as e:
-    print(e.__doc__)
+from Common.Read_yaml import Common_funcs
+from pythoncode.calculator import Calculator
+@pytest.mark.parametrize("a,b,expected",Common_funcs().get_datas("\\datas\\data_div.yml")[0], ids=Common_funcs().get_datas("\\datas\\data_div.yml")[1])
+def test_div(a,b,expected,prefix):
+    assert Calculator().div(a,b) == expected

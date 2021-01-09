@@ -1,0 +1,77 @@
+datas:
+  add:
+    - [3,3,6]
+    - [-1,-2,-3]
+    - [1000,1000,2000]
+    - [0.5,0.5,1.0]
+    - [0.5,0.5,1]
+    - [.5,.2,0.7]
+    - [0,0,0]
+    - ["str1","str2","str1str2"]
+  div:
+    - [9,3,3]
+    - [-2,1,-2]
+    - [-5,-2,2.5]
+    - [80000,10,8000]
+    - [0.3,0.5,0.6]
+    - [0.4,0.5,0.8]
+    - [.2,.5,0.4]
+    - [0,0,"Second argument to a division or modulo operation was zero."]
+    - ["str1","r1","Inappropriate argument type."]
+  mul:
+    - [3,3,9]
+    - [-1,-2,2]
+    - [100,800,80000]
+    - [0.6,0.5,0.3]
+    - [0.5,0.5,0.25]
+    - [.5,.2,0.1]
+    - [0,0,0]
+    - ["str1","r1","Inappropriate argument type."]
+  sub:
+    - [3,3,0]
+    - [-1,-2,1]
+    - [1000,800,200]
+    - [0.6,0.5,0.1]
+    - [0.5,0.5,0]
+    - [.5,.2,0.3]
+    - [0,0,0]
+    - ["str1","r1","Inappropriate argument type."]
+myids:
+  add:
+    - "int"
+    - "minus"
+    - "bigint"
+    - "float1"
+    - "float2"
+    - "float3"
+    - "zero"
+    - "string"
+  div:
+    - "int"
+    - "div1"
+    - "minus"
+    - "bigint"
+    - "float1"
+    - "float2"
+    - "float3"
+    - "zero"
+    - "str"
+  mul:
+    - "int"
+    - "minus"
+    - "bigint"
+    - "float1"
+    - "float2"
+    - "float3"
+    - "zero"
+    - "str"
+
+  sub:
+    - "int"
+    - "minus"
+    - "bigint"
+    - "float1"
+    - "float2"
+    - "float3"
+    - "zero"
+    - "str"

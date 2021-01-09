@@ -1,8 +1,8 @@
 from pythoncode.calculator import Calculator
-from Common.Read_yaml import Common
+from Common.Read_yaml import Common_funcs
 import pytest
 import yaml,sys,os
-sys.path.append("../..")
+sys.path.append("../*")
 
 # @pytest.mark.parametrize("参数名",列表数据)
 # 参数名：作为测试用例的参数. 字符串格式，多个参数中间用逗号隔开。
@@ -43,17 +43,29 @@ class Test_calculator():
         print("\nteardown_method:每个用例结束执行")
 
 
-    @pytest.mark.parametrize("a,b,expected",Common().get_datas("\\datas\\data_add.yml")[0], ids=Common().get_datas("\\datas\\data_add.yml")[1])
+    @pytest.mark.parametrize("a,b,expected",Common_funcs().get_datas("\\datas\\datas.yml")[0], ids=Common_funcs().get_datas("\\datas\\datas.yml")[1])
     def test_add(self,a,b,expected):
-        assert Calculator().add(a,b) == expected
+        result = Calculator().add(a,b)
+        if isinstance(result,float):
+            result = round(result,2)
+        assert result == expected
 
-    @pytest.mark.parametrize("a,b,expected",Common().get_datas("\\datas\\data_sub.yml")[0], ids=Common().get_datas("\\datas\\data_sub.yml")[1])
+    @pytest.mark.parametrize("a,b,expected",Common_funcs().get_datas("\\datas\\datas.yml")[6], ids=Common_funcs().get_datas("\\datas\\datas.yml")[7])
     def test_sub(self,a,b,expected):
-        assert Calculator().sub(a,b) == expected
+        result = Calculator().sub(a,b)
+        if isinstance(result,float):
+            result = round(result,2)
+        assert result == expected
 
-    @pytest.mark.parametrize("a,b,expected",Common().get_datas("\\datas\\data_mul.yml")[0], ids=Common().get_datas("\\datas\\data_mul.yml")[1])
+    @pytest.mark.parametrize("a,b,expected",Common_funcs().get_datas("\\datas\\datas.yml")[4], ids=Common_funcs().get_datas("\\datas\\datas.yml")[5])
     def test_mul(self,a,b,expected):
-        assert Calculator().mul(a,b) == expected
-@pytest.mark.parametrize("a,b,expected",Common().get_datas("\\datas\\data_div.yml")[0], ids=Common().get_datas("\\datas\\data_div.yml")[1])
+        result = Calculator().mul(a, b)
+        if isinstance(result, float):
+            result = round(result, 2)
+        assert result == expected
+@pytest.mark.parametrize("a,b,expected",Common_funcs().get_datas("\\datas\\datas.yml")[2], ids=Common_funcs().get_datas("\\datas\\datas.yml")[3])
 def test_div(a,b,expected):
-    assert Calculator().div(a,b) == expected
+    result = Calculator().div(a, b)
+    if isinstance(result, float):
+        result = round(result, 2)
+    assert result == expected
